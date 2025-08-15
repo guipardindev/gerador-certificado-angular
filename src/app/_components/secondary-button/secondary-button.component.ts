@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-primary-button',
+  selector: 'app-secondary-button',
   imports: [CommonModule],
-  templateUrl: './primary-button.html',
-  styleUrl: './primary-button.css'
+  templateUrl: './secondary-button.component.html',
+  styleUrl: './secondary-button.component.css'
 })
-export class PrimaryButton {
+export class SecondaryButtonComponent {
   @Input() textoBotao: string = '';
+  @Input() phClass: string = '';
   @Input() disabled: boolean = false;
 }

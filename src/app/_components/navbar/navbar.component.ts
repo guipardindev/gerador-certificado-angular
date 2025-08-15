@@ -4,10 +4,10 @@ import { RouterLink, RouterModule } from '@angular/router';
 @Component({
   selector: 'app-navbar',
   imports: [RouterLink, RouterModule],
-  templateUrl: './navbar.html',
-  styleUrl: './navbar.css'
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.css'
 })
-export class Navbar implements OnInit {
+export class NavbarComponent implements OnInit {
   ngOnInit(): void {
    this.mensagem();
   }
